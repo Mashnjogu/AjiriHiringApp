@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="task_category">
+        <item>Handy Person</item>
+        <item>Assembly</item>
+        <item>Transport and Removal</item>
+        <item>Repairs</item>
+        <item>Painting</item>
+        <item>Electrical</item>
+        <item>Plumbing</item>
+        <item>Farming and Gardening</item>
+        <item>Delivery</item>
+        <item>Packing and Lifting</item>
+        <item>Photography</item>
+        <item>Design</item>
+        <item>Cooking</item>
+        <item>Cooking</item>
+
+
+    </string-array>
+</resources>

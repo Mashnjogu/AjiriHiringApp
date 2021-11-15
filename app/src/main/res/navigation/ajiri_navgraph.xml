@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ajiri_navgraph"
+    app:startDestination="@+id/addTaskFragment2">
+    <fragment
+        android:id="@+id/addTaskFragment2"
+        android:name="com.sriyank.ajirihiringapp.ui.AddTaskFragment"
+        android:label="AddTaskFragment" />
+    <fragment
+        android:id="@+id/messageFragment2"
+        android:name="com.sriyank.ajirihiringapp.ui.MessageFragment"
+        android:label="MessageFragment" />
+    <fragment
+        android:id="@+id/notificationFragment2"
+        android:name="com.sriyank.ajirihiringapp.ui.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.sriyank.ajirihiringapp.ui.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/taskListFragment2"
+        android:name="com.sriyank.ajirihiringapp.ui.TaskListFragment"
+        android:label="TaskListFragment" />
+</navigation>

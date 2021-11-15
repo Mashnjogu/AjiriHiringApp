@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/reciientPImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/joker"/>
+
+    <TextView
+        android:id="@+id/recipientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/reciientPImage"
+        android:padding="8dp"
+        android:text=" Steven Wambua"
+        android:textSize="18sp" />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/recipientName"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+</RelativeLayout>

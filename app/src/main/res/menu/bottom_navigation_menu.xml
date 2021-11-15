@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/taskListFragment2"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:enabled="true"
+        android:title="tasks_list" />
+    <item
+        android:id="@+id/messageFragment2"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:enabled="true"
+        android:title="messages" />
+    <item
+        android:id="@+id/addTaskFragment2"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:enabled="true"
+        android:title="add task" />
+    <item
+        android:id="@+id/notificationFragment2"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        android:enabled="true"
+        android:title="notification" />
+    <item
+        android:id="@+id/searchFragment2"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:enabled="true"
+        android:title="search" />
+</menu>

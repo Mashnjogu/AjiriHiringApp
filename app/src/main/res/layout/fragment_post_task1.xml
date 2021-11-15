@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostTaskFragment1"
+    tools:ignore="SpeakableTextPresentCheck" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="57dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:text="Task title"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Min.10 characters"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/taskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="write a title for your task"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="To be completed at"
+            app:layout_constraintStart_toStartOf="@+id/taskDescription"
+            app:layout_constraintTop_toBottomOf="@+id/taskDescription" />
+
+        <TextView
+            android:id="@+id/taskLocation"
+            android:layout_width="334dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:text="Choose task location"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/taskLocation"
+            tools:layout_editor_absoluteX="0dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Category"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinnerChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_marginTop="8dp"
+            android:hint="Task Category"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="SpeakableTextPresentCheck" >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Must-haves"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintStart_toStartOf="@+id/spinnerChoice"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerChoice" />
+
+        <EditText
+            android:id="@+id/taskDescription"
+            android:layout_width="396dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Describe your task in as much detail as possible. Please be accurate"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="139dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/notes"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Task Description"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintStart_toStartOf="@+id/taskTitle"
+            app:layout_constraintTop_toBottomOf="@+id/taskTitle" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Min. 25 characters"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="@+id/taskTitle"
+            app:layout_constraintTop_toBottomOf="@+id/taskTitle" />
+
+        <EditText
+            android:id="@+id/task_addition"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Tell taskers what they need in order to complete the task"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Upload task images"
+            app:layout_constraintStart_toStartOf="@+id/task_addition"
+            app:layout_constraintTop_toBottomOf="@+id/task_addition" />
+
+        <Button
+            android:id="@+id/task_detail_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Save"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "64823587331",
+    "firebase_url": "https://ajiri-hiring-default-rtdb.firebaseio.com",
+    "project_id": "ajiri-hiring",
+    "storage_bucket": "ajiri-hiring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64823587331:android:adad2f79165abb34d65436",
+        "android_client_info": {
+          "package_name": "com.sriyank.ajirihiringapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64823587331-rpedduloh1odgibvr2rm7c7ctgvsj1ai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sriyank.ajirihiringapp",
+            "certificate_hash": "c5400ba0fe56eeb07fda8ad8aba28ba925a3095f"
+          }
+        },
+        {
+          "client_id": "64823587331-d2ctqkjpeue3hjh3lqtqa5jjgi7jda6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSmWs79fxVKHCLgZNf_pYf0t-JrJSLURU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64823587331-d2ctqkjpeue3hjh3lqtqa5jjgi7jda6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

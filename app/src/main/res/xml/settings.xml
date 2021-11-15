@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Account Information" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_security_24"
+        android:title="Create password" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        android:title="Notifications" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_work_24"
+        android:title="Become a Co-Tasker" />
+
+    <ListPreference
+        app:iconSpaceReserved="false"
+        android:dialogTitle="Theme"
+        app:useSimpleSummaryProvider="true"
+        android:entries="@array/entry_theme"
+        android:entryValues="@array/values_theme"
+        android:icon="@drawable/ic_baseline_color_lens_24"
+        android:title="Choose Theme"
+        />
+    <Preference
+        android:icon="@drawable/ic_baseline_delete_forever_24"
+        android:title="Delete account" />
+
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+buildscript {
+    ext.kotlin_version = "1.5.21"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.1.0-alpha08"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+        classpath 'com.google.gms:google-services:4.3.10'
+        //secrets-gradle plugin
+        classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.0")
+    }
+}

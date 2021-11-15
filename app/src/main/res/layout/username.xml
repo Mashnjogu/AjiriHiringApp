@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="256dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_color="#EEEDE7"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ChooseImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/ProfileImage"
+        app:layout_constraintTop_toTopOf="@+id/ProfileImage"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="308dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:hint="Enter User Name"
+        app:layout_constraintEnd_toEndOf="@+id/ProfileImage"
+        app:layout_constraintStart_toStartOf="@+id/ProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveInfo_btn"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/Username"
+        app:layout_constraintStart_toStartOf="@+id/Username"
+        app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
